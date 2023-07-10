@@ -25,29 +25,50 @@
         .container {
             max-width: 600px;
             min-height: 80vh;
-            margin: 20px auto;
+            margin: 40px auto;
+            padding: 40px 0;
             background-color: white;
             border-radius: 20px;
         }
 
         .content {
             padding-top: 60px;
-            margin-left: 175px;
+            margin-left: 85px;
+        
         }
 
         .content p{
             font-family: 'Montserrat', sans-serif;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
         }
         .content img {
-            max-width: 212px;
+            max-width: 230px;
+            margin-bottom: 20px;
+        }
+
+        .form_container{
+            justify-content: space-between;
         }
 
         .form_control input{
-            width: 212px;
+            width: 225px;
+            margin: 13px 0;
+            padding: 17px 0;
+            border: none;
+            border-style:outset;
+    
+        }
+        .checkbox{
+            margin-top:18px;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
         }
         .button_container button{
-            width: 212px;
+            width: 225px;
+            margin: 12px 0;
+            padding: 15px 0;
+            background-color: rgb(95, 95, 255);
+            cursor: pointer;
         }
     </style>
 
@@ -75,6 +96,14 @@
                         id="password"
                         placeholder="Enter your password">
                     </div>
+                    <div class="checkbox">
+                        <label for="check_me">
+                           
+                        </label>
+                        <input type="checkbox"
+                        id="check_me"> Remember my User ID
+                    </div>
+
                 </div>
             </form>
             <div class="button_container">

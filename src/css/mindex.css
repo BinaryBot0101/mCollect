@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Caramel&family=Montserrat:ital,wght@1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&family=Sevillana&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html,
+        body {
+            background-color: black;
+        }
+
+
+        .container {
+            max-width: 600px;
+            min-height: 80vh;
+            margin: 40px auto;
+            padding: 40px 0;
+            background-color: white;
+            border-radius: 20px;
+        }
+
+        .content {
+            padding-top: 60px;
+            margin-left: 85px;
+        
+        }
+
+        .content p{
+            font-family:'ubuntu';
+            margin-left: 18px;
+            font-size: 1.2rem;
+        }
+        .content img {
+            max-width: 226px;
+            margin-bottom: 20px;
+        }
+
+        .form_container{
+            justify-content: space-between;
+        }
+
+        .form_control input{
+            width: 225px;
+            margin: 13px 0;
+            padding: 17px 0;
+            border: none;
+            border-style:outset;
+    
+        }
+        .checkbox{
+            margin-top:18px;
+            margin-bottom: 15px;
+            font-size: 1rem;
+            font-family: 'ubuntu';
+        }
+        .button_container button{
+            width: 225px;
+            margin: 12px 0;
+            padding: 15px 0;
+            background-color: rgb(95, 95, 255);
+            cursor: pointer;
+        }
+        #password-reset-form{
+            color:blue;
+            padding-left: 55px;
+            padding-top: 20px;
+            cursor: pointer;
+        }

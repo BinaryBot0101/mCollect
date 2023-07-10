@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#d8dee8;
+        }
+
+        footer {
+            background-color: white;
+            padding: 20px;
+            justify-content: space-between;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            
+            text-decoration: none;
+        }
+
+        footer li {
+                color: black;
+                margin: 0 30px;
+            }
+
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            margin-top: 500px;
+            background-color:#d8dee8;
+        }
+
+        .card {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 5px;
+
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+        @media (max-width: 432px) {
+            footer li {
+                color: black;
+            }
+
+            .dashboard {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dashboard">
+        
+    <div id="card0" class="card">
+        <h3>Card 0</h3>
+    </div>
+        <div class="card">
+            <h3>Card 1</h3>
+        </div>
+        <div class="card">
+            <h3>Card 2</h3>
+        </div>
+        <div class="card">
+            <h3>Card 3</h3>
+        </div>
+        <div class="card">
+            <h3>Card 4</h3>
+        </div>
+        <div class="card">
+            <h3>Card 5</h3>
+        </div>
+        <div class="card">
+            <h3>Card 6</h3>
+        </div>
+    </div>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">MIS</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

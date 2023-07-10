@@ -38,11 +38,12 @@
         }
 
         .content p{
-            font-family: 'Montserrat', sans-serif;
+            font-family:'ubuntu';
+            margin-left: 18px;
             font-size: 1.2rem;
         }
         .content img {
-            max-width: 230px;
+            max-width: 226px;
             margin-bottom: 20px;
         }
 
@@ -61,13 +62,20 @@
         .checkbox{
             margin-top:18px;
             margin-bottom: 15px;
-            font-size: 1.1rem;
+            font-size: 1rem;
+            font-family: 'ubuntu';
         }
         .button_container button{
             width: 225px;
             margin: 12px 0;
             padding: 15px 0;
             background-color: rgb(95, 95, 255);
+            cursor: pointer;
+        }
+        #password-reset-form{
+            color:blue;
+            padding-left: 55px;
+            padding-top: 20px;
             cursor: pointer;
         }
     </style>
@@ -109,6 +117,9 @@
             <div class="button_container">
                 <button type="submit" >Sign in</button>
             </div>
+            <form id="password-reset-form">
+                Forgot password?
+            </form>
     
         </div>
     </div>

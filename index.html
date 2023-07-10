@@ -34,52 +34,56 @@
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <!-- <meta name="color-scheme" content="light dark"> -->
         <link rel="stylesheet" href="src/css/mindex.css">
+        <!-- Particle Css -->
+        <link rel="stylesheet" media="screen" href="src/css/common/particle-style.css">
+
         <title>mCollect Login</title>
     </head>
     <body>
+        <div id="particles-js"></div>
         <div class="container">
             <div class="content">
                 <img src="src/asset/bitsflow.png" alt="Bitsflow">
-                 <p>Login to your account</p>
+                <p>Login to your account</p>
     
-                 <form action="">
+                <form action="">
                     <div class="form_container">
                         <div class="form_control">
-                            <label for="user_id">
-                            </label>
-                            <input type="text"
-                            id="user_id"
-                            placeholder="Enter your user id">
+                            <label for="user_id"></label>
+                            <input type="text" id="user_id" placeholder="Enter your user id">
                         </div>
                         <div class="form_control">
-                            <label for="password">
-                            </label>
-                            <input type="text"
-                            id="password"
-                            placeholder="Enter your password">
+                            <label for="password"></label>
+                            <input type="text" id="password" placeholder="Enter your password">
                         </div>
                         <div class="checkbox">
-                            <label for="check_me">
-                               
-                            </label>
-                            <input type="checkbox"
-                            id="check_me"> Remember my User ID
+                            <label for="check_me"></label>
+                            <input type="checkbox" id="check_me"> Remember my User ID
                         </div>
-    
                     </div>
                 </form>
                 <div class="button_container">
-                    <button type="submit" >Sign in</button>
+                    <button type="submit">Sign in</button>
                 </div>
                 <form id="password-reset-form">
                     Forgot password?
                 </form>
-        
             </div>
         </div>
 
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="src/js/mindex.js"></script>
 
         <script src="cordova.js"></script>
         <script src="js/index.js"></script>
+
+        <!-- Particle Js -->
+        <script src="src/js/common/particles.js"></script>
+        <script src="src/js/common/particles-config.js"></script>
+        <script src="src/js/common/particles-animation.js"></script>
+
+
+
+
     </body>
 </html>

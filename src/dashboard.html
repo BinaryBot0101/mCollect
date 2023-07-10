@@ -5,12 +5,19 @@
     <title>Dashboard</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/8a073aab63.js" crossorigin="anonymous"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color:#d8dee8;
+        }
+
+        header {
+            background-color:#aecdff;
+            padding: 20px;
+            justify-content: space-between;
         }
 
         footer {
@@ -30,6 +37,16 @@
             margin-right: 10px;
         }
 
+       nav ul li .fa-solid{
+            font-size: 25px;
+        }
+
+        header ul li .fa-bell{
+            font-size: 25px;
+            margin-left:270px ;
+        }
+
+
         nav ul li a {
             
             text-decoration: none;
@@ -37,9 +54,14 @@
 
         footer li {
                 color: black;
-                margin: 0 30px;
+                margin: 0 15px;
             }
 
+        header ul img{
+            width: 25px;
+            margin-left: 10px;
+            margin-top: 10px;
+        } 
 
         .dashboard {
             display: grid;
@@ -50,8 +72,9 @@
             background-color:#d8dee8;
         }
 
+
         .card {
-            background-color: #f2f2f2;
+            background-color:white;
             padding: 20px;
             border-radius: 5px;
 
@@ -72,12 +95,19 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+            <ul>
+                
+                <li><a href="#"><i class="fa-regular fa-bell"></i></a></li>
+                <img src="user.png" alt="user">
+            </ul>
+        </nav>
+    </header>
+
+    <h2>July(monthly cyle)</h2>
 
     <div class="dashboard">
-        
-    <div id="card0" class="card">
-        <h3>Card 0</h3>
-    </div>
         <div class="card">
             <h3>Card 1</h3>
         </div>
@@ -102,8 +132,9 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Search</a></li>
+                <li><a href="#"><i class="fa-solid fa-plus"></i></a></li>
                 <li><a href="#">MIS</a></li>
-                <li><a href="#">More</a></li>
+                <li><a href="#">Reprint</a></li>
             </ul>
         </nav>
     </footer>

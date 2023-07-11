@@ -11,7 +11,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color:#d8dee8;
+            background-color:#d5dae5;
         }
 
         header {
@@ -68,8 +68,8 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
             padding: 20px;
-            margin-top: 500px;
-            background-color:#d8dee8;
+            margin-top: 30  0px;
+            background-color:#d5dae5;
         }
 
 
@@ -77,9 +77,16 @@
             background-color:white;
             padding: 20px;
             border-radius: 5px;
-
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        .card1 {
+            background-color:#d5dae5;
+            color: black;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
 
 
         @media (max-width: 432px) {
@@ -91,6 +98,11 @@
                 grid-template-columns: repeat(2, 1fr);
             }
         }
+        h3{
+            text-align: center;
+            color: black;
+        }
+        
     </style>
 </head>
 
@@ -104,27 +116,42 @@
             </ul>
         </nav>
     </header>
-
-    <h2>July(monthly cyle)</h2>
-
+    <div class="container">
+    <h3>July(monthly cyle)</h3>
+    </div>
+<div class="dashboard">
+    <div class="card1">
+        <p>Total amount collected</p>
+    </div>
+    <div class="card1">
+        <p>Receipt generated</p>
+    </div>
+    <div class="card1">
+        <p>Total amount overdue</p>
+    </div>
+    <div class="card1">
+        Follow-Ups Generated
+    </div>
+</div>
+ 
     <div class="dashboard">
         <div class="card">
-            <h3>Card 1</h3>
+            <h4>Card 1</h4>
         </div>
         <div class="card">
-            <h3>Card 2</h3>
+            <h4>Card 2</h4>
         </div>
         <div class="card">
-            <h3>Card 3</h3>
+            <h4>Card 3</h4>
         </div>
         <div class="card">
-            <h3>Card 4</h3>
+            <h4>Card 4</h4>
         </div>
         <div class="card">
-            <h3>Card 5</h3>
+            <h4>Card 5</h4>
         </div>
         <div class="card">
-            <h3>Card 6</h3>
+            <h4>Card 6</h4>
         </div>
     </div>
     <footer>

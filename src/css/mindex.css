@@ -1,5 +1,12 @@
 /* src/css/mindex.css */
 
+ /* body,html{
+    position: fixed;
+    left:0%;
+    right: 0%;
+}  */
+
+
 .container {
     position: relative;
     display: flex;
@@ -14,19 +21,44 @@
     z-index: 2;
 }
 
-img {
+img  {
     width: 200px;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 7vh !important;
+    margin-left: 50px !important;
+    margin-right: 50px !important;
+
+
 }
 
-p {
+img .logo{
+    text-align: center !important;
+}
+
+label .login-label {
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 10px !important;
+    position: relative;
+    text-align: center;
+}
+
+#rem-label {
+    color: #fff !important;
 }
 
 .form_container {
     margin-bottom: 20px;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%); */
+    /* background: #343a40; */
+    /* box-sizing: border-box; */
+    /* box-shadow: 0 15px 25px rgba(0,0,0,.6); */
+    /* border-radius: 10px; */
+    /* opacity: 80%; */
 }
 
 .form_control {
@@ -35,11 +67,11 @@ p {
     margin-bottom: 10px;
 }
 
-input[type="text"] {
+/* input[type="text"] {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
-}
+} */
 
 .checkbox {
     display: flex;
@@ -57,14 +89,56 @@ input[type="text"] {
 button {
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: #007bff;
+    background-color: #0ea47a;
     color: #fff;
     border: none;
     cursor: pointer;
 }
 
 #password-reset-form {
-    color: #007bff;
+    color: #0ea47a;
     cursor: pointer;
 }
 
+
+.form_container .user-box {
+    position: relative;
+    padding: 0px;
+  }
+  
+  .form_container .user-box input {
+    width: 100%;
+    padding: 10px ;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    border: none;
+    /* border-radius: 5px; */
+
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    /* background: #000000; */
+    
+
+  }
+  
+  .form_container .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .form_container .user-box input:focus ~ label,
+  .form_container .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #0ea47a;
+    font-size: 12px;
+  }
+  
